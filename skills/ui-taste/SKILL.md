@@ -78,6 +78,20 @@ Never:     gradients, glass, emoji icons, entrance animations
 
 When the possession dial is above chrome, the contract grows `Voice:`, `Possession:`, `Effects:`, and optionally `Intruder:` lines — formats and the effects vocabulary in `references/possession.md`.
 
+## The writing contract
+
+Copy is a taste surface, and it drifts exactly the way visuals do: toward the model's own tells. So the contract always carries a `Copy:` line naming the register (who is speaking, to whom, at what temperature), and the copy obeys a never-list with one permanent member plus whatever the register adds.
+
+Standing never-list for all site copy, every map, every register:
+
+- **Em-dashes. Never.** Not for asides, not for emphasis, not for rhythm. They are the single strongest machine-writing tell. Use a comma, a colon, parentheses, or a second sentence. This member is static: no map, voice, or user register unbans it unless the user asks by name.
+- The reversal cadence: "it's not X, it's Y", "not just X, but Y".
+- Sparkle vocabulary: delve, seamless, effortless, elevate, supercharge, unleash, revolutionize.
+- Exclamation inflation, and emoji in copy.
+- Hedged endings that trail into "and more".
+
+The register line is short and testable: `Copy: second person, present tense, quiet; standing never-list`. Before shipping, grep the rendered copy for the em-dash character and the banned phrases. The count is zero or the page is not done.
+
 Rules:
 - One map, fully committed. Blending two maps averages back toward the default look — the exact failure this skill exists to prevent.
 - The `Never` line carries the map's own failure mode plus anything from the ban list the build might otherwise drift into.
@@ -121,7 +135,7 @@ These read as "generated" on sight. None may appear unless the chosen map explic
 Before presenting, verify against the contract line by line:
 
 1. Screenshot or render the result. Is every contract line *visible* — the fonts actually loaded (not a fallback), the accent present, the signature element in place?
-2. Scan the ban list. Anything on it in the output?
+2. Scan the ban list. Anything on it in the output? Grep the copy for em-dashes and the writing never-list: zero, or it ships unfinished.
 3. Body text contrast ≥ 4.5:1; interactive targets ≥ 40px on touch-likely surfaces.
 4. Does the page look like it was made by someone with an opinion? If a stranger saw it with the logo removed, could they tell it apart from a template?
 
