@@ -85,7 +85,7 @@ Rules:
 
 Same map must not produce the same page twice. Vary along these axes:
 
-- **Accent hue, derived**: `hue = (sum of codepoints of project name × 7) mod 360`; if the result lands in 215–280 (the AI-default indigo band), use `(hue + 120) mod 360`. Brand assets or an explicit map rule override this. The point is not the formula — it is that the hue is a committed, specific, per-project choice rather than a reflex.
+- **Accent hue, derived**: `hue = (sum of codepoints of project name × 47) mod 360`; if the result lands in 215–280 (the AI-default indigo band), use `(hue + 120) mod 360`. The multiplier must be 47, not something small: at ×7, name-sums differing by multiples of ~51 wrap to full circles, and three real projects landed within 10° of each other (all teal). 47 is coprime to 360 and steps far enough that similar names scatter. Brand assets or an explicit map rule override this. The point is not the formula — it is that the hue is a committed, specific, per-project choice rather than a reflex.
 - **Display type is never** Inter, Roboto, Open Sans, Lato, or Poppins. System font stacks are allowed only where a map calls for them deliberately (Brutalist, Quiet Pro). Each map lists 2–3 display options — rotate between them across projects.
 - **One signature element** from the map's menu, plus **one bespoke detail invented for this project** — a detail that could only belong to this app (a custom cursor for a drawing tool, tide-table numerals for a harbor app). The bespoke detail is where the page stops being a template.
 - Don't reuse the previous project's font + hue pair.
