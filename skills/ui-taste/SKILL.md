@@ -15,7 +15,7 @@ The core mechanism is the **Taste Contract**: a short structured artifact you wr
 
 ## Flow
 
-1. Read the request. Extract intent signals (table below). Pick ONE taste map and a stack.
+1. Read the request. Extract intent signals (table below). Pick ONE taste map and a stack. If the subject has its own corpus — a README with a voice, doctrine files, prompts or skills of its own, a world — mine it first (see `references/possession.md`): the subject's native metaphor, voice, and governing rule can override the map table, and decide how deep the subject gets into the page (chrome / costume / possession).
 2. High confidence → ask nothing. State your reading in one line — "Reading this as an internal instrument: dense, dark, data-first" — and proceed. The stated reading is the user's veto point; it costs them nothing if they agree.
 3. Top two maps genuinely close, or the work is client/brand-facing → ask ONE batch of at most 3 questions (protocol below). This is the only time you ask. Decisions that surface mid-build get settled by the contract, not by new questions.
 4. Write the Taste Contract.
@@ -76,6 +76,8 @@ Signature: live sparkline in the header + row-scan hover on tables
 Never:     gradients, glass, emoji icons, entrance animations
 ```
 
+When the possession dial is above chrome, the contract grows `Voice:`, `Possession:`, `Effects:`, and optionally `Intruder:` lines — formats and the effects vocabulary in `references/possession.md`.
+
 Rules:
 - One map, fully committed. Blending two maps averages back toward the default look — the exact failure this skill exists to prevent.
 - The `Never` line carries the map's own failure mode plus anything from the ban list the build might otherwise drift into.
@@ -129,3 +131,4 @@ If a chart/dataviz skill is available in the environment, it governs chart inter
 
 - `references/taste-maps.md` — the nine maps in full parameter detail, current-era markers, and how to invent a new map. Read your chosen map's entry before building; skim the era markers if the request mentions "modern" or "current".
 - `references/stacks.md` — stack selection by app type, the no-build bias, CSS/font/icon strategy. Read when the stack choice isn't obvious or the user has constraints.
+- `references/possession.md` — letting the subject take the page over: the chrome/costume/possession dial, mining the subject's corpus for its metaphor, voice, and governing rule, and a mixable effects rack (generative canvas, SVG distortion, type corruption, glitch, annotation layers) with diegesis tests and budgets. Read whenever the subject has a voice or world of its own, and always before reaching for any effect.
