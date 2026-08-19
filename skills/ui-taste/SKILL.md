@@ -85,7 +85,15 @@ Rules:
 
 Same map must not produce the same page twice. Vary along these axes:
 
-- **Accent hue, derived**: `hue = (sum of codepoints of project name × 47) mod 360`; if the result lands in 215–280 (the AI-default indigo band), use `(hue + 120) mod 360`. The multiplier must be 47, not something small: at ×7, name-sums differing by multiples of ~51 wrap to full circles, and three real projects landed within 10° of each other (all teal). 47 is coprime to 360 and steps far enough that similar names scatter. Brand assets or an explicit map rule override this. The point is not the formula — it is that the hue is a committed, specific, per-project choice rather than a reflex.
+- **Accent hue, derived**: run the project name through a mixing hash, then remap around the AI-default indigo band:
+
+  ```
+  h = 5381; for each codepoint c: h = (h × 33 + c) mod 2³²   # djb2
+  hue = h mod 295
+  if hue ≥ 215: hue += 65      # skips 215–280 by remapping, not rotating
+  ```
+
+  Two linear formulas failed in the field before this one. `×7` put three real projects within 10° of each other (all teal — name-sums wrap in step). `×47` scattered better but its band rule ("if in 215–280, add 120") funneled every banded name into the same red zone — a rotation collapses a 65° band onto one color; the remap above spreads it across everything that remains. Linear maps of text cluster; mix properly. Brand assets or an explicit map rule override this. The point is not the formula — it is that the hue is a committed, specific, per-project choice rather than a reflex.
 - **Display type is never** Inter, Roboto, Open Sans, Lato, or Poppins. System font stacks are allowed only where a map calls for them deliberately (Brutalist, Quiet Pro). Each map lists 2–3 display options — rotate between them across projects.
 - **One signature element** from the map's menu, plus **one bespoke detail invented for this project** — a detail that could only belong to this app (a custom cursor for a drawing tool, tide-table numerals for a harbor app). The bespoke detail is where the page stops being a template.
 - Don't reuse the previous project's font + hue pair.
