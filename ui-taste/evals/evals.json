@@ -1,0 +1,23 @@
+{
+  "skill_name": "ui-taste",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Build me a little web dashboard that watches a folder of JSON log files and shows error rates per service, updating live. It's just for me, running on localhost.",
+      "expected_output": "Instrument map inferred with zero questions (internal, monitoring, personal). Taste Contract emitted before code. No-build stack: single HTML file or tiny server + SSE, vanilla JS, hand-rolled sparklines/SVG. Dark hue-biased ground, mono data face, tabular numerals, no ban-list items.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I need a landing page for my side project — it's a note-taking app for fiction writers called Inkwell. Something that would make a writer actually want to try it.",
+      "expected_output": "Editorial (or Gallery) map inferred; at most one small question batch if any. Static single-file or Astro page. Serif display type, warm paper ground, accent derived from the project name, one signature move (e.g. drop cap or margin notes), a bespoke detail tied to writing/ink. No centered-hero-two-buttons-three-cards, no indigo gradient, no Inter.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "make a quick browser game where falling shapes stack up and you rotate them to fit, needs to feel juicy",
+      "expected_output": "Toybox or Arcade map inferred from 'game' + 'juicy', zero questions. Canvas2D loop with plain DOM overlay for chrome, no framework. Springy/snappy motion per map (squash-and-stretch or screen-shake), chunky display face, saturated committed palette, score treated as a visual anchor. No emoji icons.",
+      "files": []
+    }
+  ]
+}
