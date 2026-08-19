@@ -1,0 +1,17 @@
+{
+  "name": "newsbubbles-skills",
+  "owner": { "name": "newsbubbles" },
+  "metadata": {
+    "description": "Skills by newsbubbles — taste-driven web UI, more to come",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "ui-taste",
+      "description": "Picks the stack and visual direction for any web UI: infers a taste map from intent, asks at most one question batch, locks a Taste Contract before code, bans the AI-default look",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/ui-taste"]
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 ---
 name: ui-taste
 description: Choose the stack and the visual direction for any web-facing build — apps, dashboards, landing pages, browser games, tools, prototypes, redesigns. Use whenever the user asks to build, redesign, restyle, or make a UI, page, site, or front-end for anything that renders in a browser, even when they say nothing about design or stack. This skill picks the stack by app type, infers a taste direction from the request, asks at most one small batch of questions up front, and locks a Taste Contract so the result looks deliberately designed instead of AI-default. Not for native mobile apps, TUI/CLI output, or pure backend work.
+license: MIT
+metadata:
+  author: newsbubbles
+  version: "0.1.0"
 ---
 
 # UI Taste

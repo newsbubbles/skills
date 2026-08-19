@@ -25,7 +25,7 @@ What separates a current page from a 2020–2023 page. The anti-list in SKILL.md
 **Essence**: a cockpit. The data is the decoration; chrome exists to be ignored.
 **Fits**: dashboards, monitors, admin panels, dev tools, ops consoles, internal tools, anything with live numbers.
 
-- **Type**: display — Space Grotesk, Archivo, or Instrument Sans; data and chrome — IBM Plex Mono, JetBrains Mono, or Geist Mono. Tabular numerals (`font-variant-numeric: tabular-nums`) everywhere numbers align.
+- **Type**: display — Archivo, Schibsted Grotesk, or Familjen Grotesk (not Space Grotesk — it has become the AI-default "safe" face and reads as generated); data and chrome — IBM Plex Mono, JetBrains Mono, or Geist Mono. Tabular numerals (`font-variant-numeric: tabular-nums`) everywhere numbers align.
 - **Color**: dark ground with a hue bias (`#0d1117`, `#101418`, `#0c1210`); ink `#e6edf3`-class; one accent from the hue rule for live/primary; a fixed semantic trio (ok/warn/bad) that is NOT the accent. Light variant allowed for daytime tools: `#f2f2ef` ground, near-black ink.
 - **Space**: compact. 4px base unit, 12–13px chrome text, 1.4 line-height. Density is respect for the operator.
 - **Shape**: 0–2px radius, 1px hairline borders one step above ground, no drop shadows — elevation by border and ground shift.
@@ -100,7 +100,7 @@ What separates a current page from a 2020–2023 page. The anti-list in SKILL.md
 **Essence**: warm and touchable — real-light shadows, rounded but grounded, human without being childish.
 **Fits**: consumer apps, journaling, habit trackers, learning tools, onboarding flows, calm productivity.
 
-- **Type**: display — Bricolage Grotesque or a friendly serif like Fraunces at low WONK; body — DM Sans or Instrument Sans, 16–17px.
+- **Type**: display — Bricolage Grotesque or a friendly serif like Fraunces at low WONK; body — DM Sans or Instrument Sans, 16–17px. Warning: warm cream + serif display + terracotta accent, all three together, is itself a burned AI cluster — break it on at least one axis (grotesque display, sage or ochre accent, or a non-cream ground).
 - **Color**: warm neutrals (`#f5efe6`, `#efe9df`) with ink `#2b2622`; 2–3 supporting pastels-with-spine (muted terracotta, sage, ochre — saturation 35–55%, not nursery pastels); accent from the hue rule warmed to fit.
 - **Space**: comfortable — 8px base, breathing room, cards that don't crowd.
 - **Shape**: rounded 10–16px on containers, full-round on pills/avatars; shadows with real light logic — one soft ambient plus one directional (`0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(40,30,20,.08)`), never a uniform halo.
